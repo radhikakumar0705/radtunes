@@ -1,0 +1,248 @@
+/* Global styles */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, #121212, #1e1e1e);
+  color: #e0e0e0;
+}
+
+a {
+  text-decoration: none;
+  color: #e0e0e0;
+}
+
+/* Navbar */
+.navbar {
+  background-color:rgb(0, 0, 0);
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.logo-img {
+  height: 40px;
+  object-fit: contain;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  font-weight: 100;
+  color: #e0e0e0;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #c084fc;
+}
+
+/* Dropdown */
+.user-dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.user-dropdown span {
+  font-weight: 500;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #1e1e1e;
+  padding: 0.5rem;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.user-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content button {
+  background: none;
+  border: none;
+  color: #ff6b6b;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Sections */
+section {
+  padding: 2rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  color: #c084fc;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+/* Cards */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background-color: #2a2a2a;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.hover-grow:hover {
+  transform: scale(1.05);
+  background-color: #3a2a4c;
+}
+
+/* Highlights */
+.highlight-section .highlight-cards {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.highlight-card {
+  flex: 1;
+  background-color: #2a2a2a;
+  padding: 1rem;
+  border-radius: 8px;
+  min-width: 200px;
+}
+
+/* Recently played scroll */
+.recent-scroll {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+}
+
+.recent-scroll .card {
+  min-width: 180px;
+  flex-shrink: 0;
+}
+
+/* Playlist section */
+.playlist-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.playlist-create {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.playlist-create input {
+  flex: 1;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.playlist-create button {
+  padding: 0.5rem 1rem;
+  background: linear-gradient(to right, #c084fc, #a855f7);
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.playlist-create button:hover {
+  background: linear-gradient(to right, #a855f7, #c084fc);
+}
+
+.playlist-card {
+  background-color: #1f1f1f;
+  width: 240px;
+  height: 240px;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.playlist-card:hover {
+  transform: translateY(-5px);
+  background-color: #2b1e35;
+}
+
+.playlist-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.playlist-songs {
+  margin-top: 1rem;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.playlist-song {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.playlist-song button {
+  background: none;
+  border: none;
+  color: #ff6b6b;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.playlist-songs select {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #2a2a2a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .highlight-cards {
+    flex-direction: column;
+  }
+
+  .playlist-create {
+    flex-direction: column;
+  }
+
+  .playlist-section {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: Futura, sans-serif;
+    font-weight: 100
+    background-color: black;
+    color: white;
+  }
+  
+  .signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+  }
+  
+  .signup-box {
+    width: 100%;
+    max-width: 400px;
+    background-color: #111;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgb(243, 241, 246);
+  }
+  
+  .signup-box h1 {
+    font-size: 2rem;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .signup-box input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #222;
+    color: white;
+    box-sizing: border-box;
+  }
+  
+  .signup-box input::placeholder {
+    color: #aaa;
+  }
+  
+  .signup-box button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color:rgb(127, 86, 241); /* Tailwind green-500 */
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .signup-box button:hover {
+    background-color:rgb(128, 87, 195); /* Tailwind green-600 */
+  }
+  
+  .signup-box p {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.95rem;
+  }
+  
+  .signup-box a {
+    color: #3b82f6; /* Tailwind blue-500 */
+    text-decoration: none;
+  }
+  
+  .signup-box a:hover {
+    text-decoration: underline;
+  }
+  
+  .text-red-500 {
+    color: #ef4444;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  

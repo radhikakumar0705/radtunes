@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    font-family: Futura, sans-serif;
+  }
+  
+  .login-container {
+    display: flex;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+  }
+  
+  .left-side {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .right-side {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .right-side img {
+    max-width: 80%;
+    max-height: 80%;
+  }
+  
+  .login-box {
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+  }
+  
+  .login-box h1 {
+    font-size: 2rem;
+    font-weight: 100;
+    margin-bottom: 2rem;
+  }
+  
+  .login-box input,
+  .login-box button,
+  .signup-link button {
+    width: 250px;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    box-sizing: border-box;
+  }
+  
+  .login-box input {
+    background-color: #222;
+    color: white;
+  }
+  
+  .login-box input::placeholder {
+    color: #aaa;
+  }
+  
+  .login-box button,
+  .signup-link button {
+    background-color: #7c3aed;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .login-box button:hover,
+  .signup-link button:hover {
+    background-color: #6d28d9;
+  }
+  
+  .signup-link {
+    margin-top: 1rem;
+  }
+
+  
