@@ -11,7 +11,7 @@ RadTunes is a full-stack music web application that lets users sign up, explore 
 - 🕑 Track Recently Played songs
 - 📁 Create, manage, and play custom playlists
 - ✨ Music Highlights: Most played song, artist & total listening time
-- 💅 Soft glassy UI with elegant blur effects and hover animations
+- 💅 Soft UI with hover animations
 
 ---
 
@@ -43,9 +43,3 @@ RadTunes is a full-stack music web application that lets users sign up, explore 
 ![Homepage](frontend/public/homepage2.png)
 ---
 
-## 🧑‍💻 Getting Started
-
-### 1. Clone the repo
-```bash
-git clone https://github.com/yourusername/radtunes.git
-cd radtunes
